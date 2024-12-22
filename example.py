@@ -10,11 +10,16 @@ from time import sleep
 # actions are called on this object will be reflected on the screen.
 my_turtle = turtle.Turtle()
 
+# with 140 this should be 18 to come back to same spot.
+# with 135 this should be 8 to come back to same spot.
+# with 162 this should be 20 to come back to same spot.
+# ( 180 - 162 ) * 20 = 360
+k: int = 12
 # Draw an equilateral shape with k sides
-for i in range(5):
+for i in range(k):
     # print("Current value of i is: ", i)
     my_turtle.forward(100)
-    my_turtle.right(360//5)
+    my_turtle.right(180 - 360/k)
     sleep(1)
 
 # Keep the window open. If you uncomment the line below you will see
