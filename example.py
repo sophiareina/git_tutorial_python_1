@@ -11,10 +11,10 @@ from time import sleep
 my_turtle = turtle.Turtle()
 
 # Draw an equilateral shape with k sides
-for i in range(4):
+for i in range(5):
     # print("Current value of i is: ", i)
     my_turtle.forward(100)
-    my_turtle.right(90)
+    my_turtle.right(360//5)
     sleep(1)
 
 # Keep the window open. If you uncomment the line below you will see
